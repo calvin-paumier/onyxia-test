@@ -8,7 +8,7 @@ REPO_URL="https://github.com/calvin-paumier/onyxia-test"
 git clone --depth 1 $REPO_URL $CLONE_DIR
 
 # Put relevant notebook in formation dir
-cp "scripts/init.ipynb" "${WORK_DIR}"
+cp "notebooks/hello_world.ipynb" "${WORK_DIR}"
 
 # Remove useless repository
 rm -rf $CLONE_DIR
