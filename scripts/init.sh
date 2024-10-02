@@ -15,5 +15,8 @@ cp "${CLONE_DIR}/docs/solfege.txt" "${WORK_DIR}"
 # Remove useless repository
 rm -rf $CLONE_DIR
 
+# requierements
+pip install -r "${CLONE_DIR}/requirements.txt"
+
 # Open the relevant notebook when starting Jupyter Lab
 echo "c.LabApp.default_url = '/lab/tree/llm_test.ipynb'" >> /home/onyxia/.jupyter/jupyter_server_config.py
